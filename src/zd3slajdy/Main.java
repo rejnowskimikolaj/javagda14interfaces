@@ -7,7 +7,7 @@ public class Main {
         Pokarm banan = new Pokarm("banan chicita",100,TypPokarmu.OWOCE);
         Pokarm kefir = new Pokarm("kefir",50,TypPokarmu.NABIAL);
 
-        Jedzacy dundee = new Krokodyl();
+        Krokodyl dundee = new Krokodyl();
         Jedzacy javaDev = new Programista();
         Jedzacy weganinAdas = new Weganin();
 
@@ -26,5 +26,10 @@ public class Main {
         System.out.println(weganinAdas);
         System.out.println(dundee);
         System.out.println(javaDev);
+
+        Jedzacy[] jedzacies = {dundee,weganinAdas,javaDev};
+
+        Krokodyl krokodylZtablicy = (Krokodyl) jedzacies[0];
+
     }
 }
